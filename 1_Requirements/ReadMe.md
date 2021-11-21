@@ -2,6 +2,8 @@
 ## INTRODUCTION
   In this project ,I have Written a program that plays tic-tac-toe. The tic-tac-toe game is played on a 3x3 grid the game is played by two players, who take turns. The first player marks moves with a circle, the second with a cross. The player who has formed a horizontal, vertical, or diag-onal sequence of three marks wins. Your program should draw the game board, ask the user for the coordinates of the next mark, change the players after every successful move, and pronounce the winner.
 
+## Research
+
 HLR:
 * two players, X and O, who take turns marking the spaces in a 3 x 3 grid.
 *The player who succeeds in placing three respective marks in a horizontal, vertical or diagonal row wins the game.
