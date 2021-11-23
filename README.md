@@ -21,7 +21,7 @@ Folder               | Description
 |F_04| announcing the result of the game |
 
 
-## Challenges Faced and How Was It Overcome
+## Challenges Faced .
 
 1.during unit testing.
 
