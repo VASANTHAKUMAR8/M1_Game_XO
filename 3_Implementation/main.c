@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <ncurses.h> 
+ 
 
 int display_board(char board[3][3]); 
 int display_board(char board[3][3]) 
