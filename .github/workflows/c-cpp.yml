@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: build
-      run: gcc hello.c -o hello.exe
-    - name: Run
-      run: ./hello.exe
+    - name: setup
+      run: sudo apt-get install make
+    - name: make
+      run: make
