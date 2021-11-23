@@ -1,6 +1,6 @@
 # REQUIREMENTS
 ## INTRODUCTION
-  In this project ,I have Written a program that plays tic-tac-toe. The tic-tac-toe game is played on a 3x3 grid the game is played by two players, who take turns. The first player marks moves with a circle, the second with a cross. The player who has formed a horizontal, vertical, or diag-onal sequence of three marks wins. Your program should draw the game board, ask the user for the coordinates of the next mark, change the players after every successful move, and pronounce the winner.
+ ### In this project ,I have Written a program that plays tic-tac-toe. The tic-tac-toe game is played on a 3x3 grid the game is played by two players, who take turns. The first player marks moves with a circle, the second with a cross. The player who has formed a horizontal, vertical, or diag-onal sequence of three marks wins. Your program should draw the game board, ask the user for the coordinates of the next mark, change the players after every successful move, and pronounce the winner.
 
 ## Research
 ### *The Games played on three-in-a-row boards can be traced back to ancient Egypt, where such game boards have been found on roofing tiles dating from around 1300 BC.
@@ -24,39 +24,39 @@
 
 ### strengths
 
-* using this game will improve mind power .
+### * using this game will improve mind power .
 
 ### weaknesses
 
-* this project has better version .
+### * this project has better version .
 
-* so marketing is not easy.
+### * so marketing is not easy.
 
 ### opportunities
 
-* this project make easy to learn and make opportunities for biginner to Know abot the game.
+### * this project make easy to learn and make opportunities for biginner to Know abot the game.
 
 ### Threats
 
-*some times there will be some issues regarding system setup(based on the systems).
+### *some times there will be some issues regarding system setup(based on the systems).
 
 
 ## 4W's and 1'H
 
 ### who:
-   player, Investors and Clients.
+  ### player, Investors and Clients.
    
 ### when:
-   whene ever the player has intrest.
+  ### whene ever the player has intrest.
    
 ### what:
-   this is a game created for the customers.
+  ### this is a game created for the customers.
    
 ### where:
-   where ever the player has the system can lanch this project.
+  ### where ever the player has the system can lanch this project.
    
 ### How:
-  Based on the research, identifying the features and implementing the requirements in the C programming language .
+ ### Based on the research, identifying the features and implementing the requirements in the C programming language .
    
    
 ## Detail requirements
