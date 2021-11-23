@@ -6,8 +6,8 @@
 int display_board(char board[3][3]); 
 int display_board(char board[3][3]) 
 {
-	int i = 0; // initialize loop counter
-	int j = 0; // initialize loop counter
+	int i = 0; 
+	int j = 0; 
 	
 	for (i = 0; i < 3; i++) 
 	{
@@ -40,14 +40,14 @@ int input(int number)
 	while (valid == 0)
 	{
 		printf("\n Choose a %s> ", *string_to_print); 
-		scanf("%d", &row_or_column); // Get input 
+		scanf("%d", &row_or_column);  
 		if (1 <= row_or_column && row_or_column <= 3)
 		{
 			printf("\n You have chosen %s #%d. \n", *string_to_print, row_or_column);
 			valid = 1;
 			
 		} else {
-			printf("\n %s = %d \n", *string_to_print, row_or_column); // Statement for debugging
+			printf("\n %s = %d \n", *string_to_print, row_or_column); 
 			printf("\n Invalid %s chosen, please try again. \n (The %s number must be either 1, 2, or 3.) \n", *string_to_print, *string_to_print);
 			
 		}
@@ -111,7 +111,7 @@ int main (int argc, const char * argv[]) {
 	printf("\n Message for security and/or debugging: \n This program's path is %s and it is running with %i argument(s). \n", argv[0], argc); 
 	char board[3][3] = {{'_', '_', '_'}, {'_', '_', '_'}, {'_', '_', '_'}}; 
 	int won = 0; 
-	// printf("\n won = %i \n", won); 
+	 
 	printf("\n Here is a blank Tic-Tac-Toe board for you and a friend to play Tic-Tac-Toe on: \n");
 	display_board(board); 
 	while (won == 0) 
@@ -142,7 +142,7 @@ int main (int argc, const char * argv[]) {
 				exit(1);
 			}
 			
-			number = 0; // Reset
+			number = 0; 
 		}
 		printf("\n The board now looks like this: \n");
 		display_board(board); 
