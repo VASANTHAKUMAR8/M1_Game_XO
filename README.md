@@ -4,6 +4,6 @@
 Folder               | Description
 -------------------  | -----------------------------------------
 `1_Requirements`     | Documents Detailing requirements and research.
-`2_Design`     | Documents Specifying design details.
+`2_Design_diagram`     | Documents Specifying design details.
 `3_Implementation`   | All Code and Documentation.
 `4_TestPlan`| Test Cases.
