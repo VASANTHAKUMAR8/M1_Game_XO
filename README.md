@@ -20,3 +20,11 @@ Folder               | Description
 |F_03| looking for winner |
 |F_04| announcing the result of the game |
 
+
+## Challenges Faced and How Was It Overcome
+
+1.during unit testing.
+
+2.Generation of makefile.
+
+3.debugging setup.
