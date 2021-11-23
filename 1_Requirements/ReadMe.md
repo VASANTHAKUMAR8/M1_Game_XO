@@ -38,7 +38,7 @@
 
 ### Threats
 
-*some times there will be some issues regarding system compilation.
+*some times there will be some issues regarding system setup(based on the systems).
 
 
 ## 4W's and 1'H
