@@ -9,8 +9,8 @@ src/operation.c
 
 
 # All test source files
-TEST_SRC = src/BankOperations.c\
-test/test_BankOperations.c\
+TEST_SRC = src/operation.c\
+test/test_operation.c\
 unit/unity.c\
 
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).exe
