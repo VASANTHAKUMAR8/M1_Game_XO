@@ -4,3 +4,4 @@
 
 
 
+![minimax-player](https://user-images.githubusercontent.com/94224310/143223828-7473cc74-bf91-4ef9-924c-caf8978770c1.png)
