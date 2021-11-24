@@ -1,4 +1,5 @@
-PROJECT_NAME = XOgame
+# Name of the project
+PROJECT_NAME = XO_game
 
 # Output directory
 BUILD = build
@@ -7,38 +8,27 @@ BUILD = build
 SRC = main.c\
 src/operation.c
 
-
 # All test source files
 TEST_SRC = src/operation.c\
 test/test_operation.c\
-unit/unity.c\
+unity/unity.c\
 
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).exe
 
 # All include folders with header files
 INC	= -Iinc\
--Iunit\
+-Iunity\
 
-
+#Library Inlcudes
+#if working with CUnit 
+#INCLUDE_LIBS = -lcunit
+INCLUDE_LIBS =
 
 # Project Output name
 PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).exe
 
 # Document files
 DOCUMENTATION_OUTPUT = documentation/html
-
-
- ifdef OS
-    RM = rm
-    FixPath = $(subst /,\,$1)
-    EXEC = exe
- else
-    ifeq ($(shell uname), Linux)
-       RM = rm -rf
-       FixPath = $1
- 	    EXEC = out
-    endif
- endif
 
 # Default target built
 $(PROJECT_NAME):all
@@ -47,25 +37,28 @@ $(PROJECT_NAME):all
 .PHONY: run clean test doc all
 
 all: $(SRC) $(BUILD)
-	gcc $(SRC) $(INC) -o $(call FixPath,$(PROJECT_OUTPUT))
+	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).exe
 
 # Call `make run` to run the application
 run:$(PROJECT_NAME)
-	./$(call FixPath,$(PROJECT_OUTPUT))
+	./$(PROJECT_OUTPUT).exe
 
 # Document the code using Doxygen
-doc:
-	make -C ./documentation
+#doc:
+#	make -C ./documentation
 
 # Build and run the unit tests
 test:$(BUILD)
-	gcc $(TEST_SRC) $(INC) -o $(call FixPath,$(TEST_OUTPUT).$(EXEC))
-	./$(call FixPath,$(TEST_OUTPUT).$(EXEC))
-
+	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
+	./$(TEST_OUTPUT)
+#Coverage
+coverageCheck:$(BUILD)
+	g++ -fprofile-arcs -ftest-coverage -fPIC -O0 $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
+	./$(TEST_OUTPUT)
 
 # Remove all the built files, invoke by `make clean`
 clean:
-	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT) *.gcda *.gcno *.gcov
+	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT)
 
 # Create new build folder if not present
 $(BUILD):
