@@ -1,4 +1,4 @@
-PROJECT_NAME = XO_game
+PROJECT_NAME = XOgame
 
 # Output directory
 BUILD = build
