@@ -1,6 +1,8 @@
 # M1_Game_XO
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/07f6a1353ea34ad98d565890bd398243)](https://www.codacy.com/gh/VASANTHAKUMAR8/M1_Game_XO/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=VASANTHAKUMAR8/M1_Game_XO&amp;utm_campaign=Badge_Grade)
 
+[![Code Quality - Static Code - Cppcheck](https://github.com/VASANTHAKUMAR8/M1_Game_XO/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/VASANTHAKUMAR8/M1_Game_XO/actions/workflows/cppcheck.yml)
+
 ## INTRODUCTION
  ### In this project ,I have Written a program that plays tic-tac-toe. The tic-tac-toe game is played on a 3x3 grid the game is played by two players, who take turns. The first player marks moves with a circle, the second with a cross. The player who has formed a horizontal, vertical, or diag-onal sequence of three marks wins. Your program should draw the game board, ask the user for the coordinates of the next mark, change the players after every successful move, and pronounce the winner.
 
