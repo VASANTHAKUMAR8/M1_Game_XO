@@ -2,7 +2,7 @@
 PROJECT_NAME = XO_game
 # All source code files
 SRC = main.c\
-src/clinic_main.c
+src/operation.c
 INC = inc
 all.exe : $(SRC) 
 	gcc $^ -I$(INC) -o $@
