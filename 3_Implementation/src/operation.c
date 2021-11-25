@@ -1,6 +1,6 @@
 #include <operation.h>
 
-void display_board(char board[3][3]) 
+int display_board(char board[3][3]) 
 {
 	int i = 0; 
 	int j = 0; 
@@ -17,7 +17,7 @@ void display_board(char board[3][3])
 	return 0;
 }
 
-void input(int number) 
+int input(int number) 
 {
 	int row_or_column = 0; 
 	char* string_to_print[7]; 
@@ -49,7 +49,7 @@ void input(int number)
 	return row_or_column;
 }
 
-void winner(char board[3][3]) 
+int winner(char board[3][3]) 
 {
 	int winner_number = 0;
 	int blank = 0;
